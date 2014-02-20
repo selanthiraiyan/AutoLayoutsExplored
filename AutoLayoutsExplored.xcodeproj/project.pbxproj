@@ -27,6 +27,7 @@
 		BAB751BF18B5DC8D00EEE896 /* StopOrTrailingStopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751BE18B5DC8D00EEE896 /* StopOrTrailingStopView.m */; };
 		BAB751CA18B5FE7000EEE896 /* ExpiryTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751C718B5FE7000EEE896 /* ExpiryTypeView.m */; };
 		BAB751CB18B5FE7000EEE896 /* ProtectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751C918B5FE7000EEE896 /* ProtectionView.m */; };
+		BAB751CD18B605A200EEE896 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BAB751CC18B605A200EEE896 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		BAB751C718B5FE7000EEE896 /* ExpiryTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpiryTypeView.m; sourceTree = "<group>"; };
 		BAB751C818B5FE7000EEE896 /* ProtectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectionView.h; sourceTree = "<group>"; };
 		BAB751C918B5FE7000EEE896 /* ProtectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionView.m; sourceTree = "<group>"; };
+		BAB751CC18B605A200EEE896 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		BAB7517318B5D79A00EEE896 = {
 			isa = PBXGroup;
 			children = (
+				BAB751CC18B605A200EEE896 /* README.md */,
 				BAB7518518B5D79A00EEE896 /* AutoLayoutsExplored */,
 				BAB7519E18B5D79A00EEE896 /* AutoLayoutsExploredTests */,
 				BAB7517E18B5D79A00EEE896 /* Frameworks */,
@@ -259,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB751CD18B605A200EEE896 /* README.md in Resources */,
 				BAB7518A18B5D79A00EEE896 /* InfoPlist.strings in Resources */,
 				BAB7519218B5D79A00EEE896 /* Images.xcassets in Resources */,
 			);
