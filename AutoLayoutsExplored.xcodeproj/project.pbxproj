@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAB7518018B5D79A00EEE896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7517F18B5D79A00EEE896 /* Foundation.framework */; };
+		BAB7518218B5D79A00EEE896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7518118B5D79A00EEE896 /* CoreGraphics.framework */; };
+		BAB7518418B5D79A00EEE896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7518318B5D79A00EEE896 /* UIKit.framework */; };
+		BAB7518A18B5D79A00EEE896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAB7518818B5D79A00EEE896 /* InfoPlist.strings */; };
+		BAB7518C18B5D79A00EEE896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB7518B18B5D79A00EEE896 /* main.m */; };
+		BAB7519018B5D79A00EEE896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB7518F18B5D79A00EEE896 /* AppDelegate.m */; };
+		BAB7519218B5D79A00EEE896 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB7519118B5D79A00EEE896 /* Images.xcassets */; };
+		BAB7519918B5D79A00EEE896 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7519818B5D79A00EEE896 /* XCTest.framework */; };
+		BAB7519A18B5D79A00EEE896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7517F18B5D79A00EEE896 /* Foundation.framework */; };
+		BAB7519B18B5D79A00EEE896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7518318B5D79A00EEE896 /* UIKit.framework */; };
+		BAB751A318B5D79A00EEE896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAB751A118B5D79A00EEE896 /* InfoPlist.strings */; };
+		BAB751A518B5D79A00EEE896 /* AutoLayoutsExploredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751A418B5D79A00EEE896 /* AutoLayoutsExploredTests.m */; };
+		BAB751B218B5D7B500EEE896 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751AF18B5D7B500EEE896 /* BaseViewController.m */; };
+		BAB751B318B5D7B500EEE896 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751B118B5D7B500EEE896 /* BaseView.m */; };
+		BAB751B618B5D81D00EEE896 /* TradeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751B518B5D81D00EEE896 /* TradeView.m */; };
+		BAB751B918B5D85A00EEE896 /* TradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751B818B5D85A00EEE896 /* TradeViewController.m */; };
+		BAB751BC18B5DBD100EEE896 /* BuySellView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751BB18B5DBD100EEE896 /* BuySellView.m */; };
+		BAB751BF18B5DC8D00EEE896 /* StopOrTrailingStopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751BE18B5DC8D00EEE896 /* StopOrTrailingStopView.m */; };
+		BAB751CA18B5FE7000EEE896 /* ExpiryTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751C718B5FE7000EEE896 /* ExpiryTypeView.m */; };
+		BAB751CB18B5FE7000EEE896 /* ProtectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB751C918B5FE7000EEE896 /* ProtectionView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAB7519C18B5D79A00EEE896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAB7517418B5D79A00EEE896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAB7517B18B5D79A00EEE896;
+			remoteInfo = AutoLayoutsExplored;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAB7517C18B5D79A00EEE896 /* AutoLayoutsExplored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutsExplored.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB7517F18B5D79A00EEE896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BAB7518118B5D79A00EEE896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BAB7518318B5D79A00EEE896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BAB7518718B5D79A00EEE896 /* AutoLayoutsExplored-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoLayoutsExplored-Info.plist"; sourceTree = "<group>"; };
+		BAB7518918B5D79A00EEE896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAB7518B18B5D79A00EEE896 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAB7518D18B5D79A00EEE896 /* AutoLayoutsExplored-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutsExplored-Prefix.pch"; sourceTree = "<group>"; };
+		BAB7518E18B5D79A00EEE896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAB7518F18B5D79A00EEE896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAB7519118B5D79A00EEE896 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BAB7519718B5D79A00EEE896 /* AutoLayoutsExploredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutsExploredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB7519818B5D79A00EEE896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BAB751A018B5D79A00EEE896 /* AutoLayoutsExploredTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoLayoutsExploredTests-Info.plist"; sourceTree = "<group>"; };
+		BAB751A218B5D79A00EEE896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAB751A418B5D79A00EEE896 /* AutoLayoutsExploredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutsExploredTests.m; sourceTree = "<group>"; };
+		BAB751AE18B5D7B500EEE896 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BAB751AF18B5D7B500EEE896 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		BAB751B018B5D7B500EEE896 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		BAB751B118B5D7B500EEE896 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		BAB751B418B5D81D00EEE896 /* TradeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeView.h; sourceTree = "<group>"; };
+		BAB751B518B5D81D00EEE896 /* TradeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeView.m; sourceTree = "<group>"; };
+		BAB751B718B5D85A00EEE896 /* TradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeViewController.h; sourceTree = "<group>"; };
+		BAB751B818B5D85A00EEE896 /* TradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeViewController.m; sourceTree = "<group>"; };
+		BAB751BA18B5DBD100EEE896 /* BuySellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuySellView.h; sourceTree = "<group>"; };
+		BAB751BB18B5DBD100EEE896 /* BuySellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuySellView.m; sourceTree = "<group>"; };
+		BAB751BD18B5DC8D00EEE896 /* StopOrTrailingStopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopOrTrailingStopView.h; sourceTree = "<group>"; };
+		BAB751BE18B5DC8D00EEE896 /* StopOrTrailingStopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopOrTrailingStopView.m; sourceTree = "<group>"; };
+		BAB751C618B5FE7000EEE896 /* ExpiryTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpiryTypeView.h; sourceTree = "<group>"; };
+		BAB751C718B5FE7000EEE896 /* ExpiryTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpiryTypeView.m; sourceTree = "<group>"; };
+		BAB751C818B5FE7000EEE896 /* ProtectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectionView.h; sourceTree = "<group>"; };
+		BAB751C918B5FE7000EEE896 /* ProtectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAB7517918B5D79A00EEE896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB7518218B5D79A00EEE896 /* CoreGraphics.framework in Frameworks */,
+				BAB7518418B5D79A00EEE896 /* UIKit.framework in Frameworks */,
+				BAB7518018B5D79A00EEE896 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB7519418B5D79A00EEE896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB7519918B5D79A00EEE896 /* XCTest.framework in Frameworks */,
+				BAB7519B18B5D79A00EEE896 /* UIKit.framework in Frameworks */,
+				BAB7519A18B5D79A00EEE896 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAB7517318B5D79A00EEE896 = {
+			isa = PBXGroup;
+			children = (
+				BAB7518518B5D79A00EEE896 /* AutoLayoutsExplored */,
+				BAB7519E18B5D79A00EEE896 /* AutoLayoutsExploredTests */,
+				BAB7517E18B5D79A00EEE896 /* Frameworks */,
+				BAB7517D18B5D79A00EEE896 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAB7517D18B5D79A00EEE896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAB7517C18B5D79A00EEE896 /* AutoLayoutsExplored.app */,
+				BAB7519718B5D79A00EEE896 /* AutoLayoutsExploredTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAB7517E18B5D79A00EEE896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAB7517F18B5D79A00EEE896 /* Foundation.framework */,
+				BAB7518118B5D79A00EEE896 /* CoreGraphics.framework */,
+				BAB7518318B5D79A00EEE896 /* UIKit.framework */,
+				BAB7519818B5D79A00EEE896 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAB7518518B5D79A00EEE896 /* AutoLayoutsExplored */ = {
+			isa = PBXGroup;
+			children = (
+				BAB751AE18B5D7B500EEE896 /* BaseViewController.h */,
+				BAB751AF18B5D7B500EEE896 /* BaseViewController.m */,
+				BAB751B018B5D7B500EEE896 /* BaseView.h */,
+				BAB751B118B5D7B500EEE896 /* BaseView.m */,
+				BAB7518E18B5D79A00EEE896 /* AppDelegate.h */,
+				BAB7518F18B5D79A00EEE896 /* AppDelegate.m */,
+				BAB7519118B5D79A00EEE896 /* Images.xcassets */,
+				BAB7518618B5D79A00EEE896 /* Supporting Files */,
+				BAB751B418B5D81D00EEE896 /* TradeView.h */,
+				BAB751B518B5D81D00EEE896 /* TradeView.m */,
+				BAB751B718B5D85A00EEE896 /* TradeViewController.h */,
+				BAB751B818B5D85A00EEE896 /* TradeViewController.m */,
+				BAB751BA18B5DBD100EEE896 /* BuySellView.h */,
+				BAB751BB18B5DBD100EEE896 /* BuySellView.m */,
+				BAB751BD18B5DC8D00EEE896 /* StopOrTrailingStopView.h */,
+				BAB751BE18B5DC8D00EEE896 /* StopOrTrailingStopView.m */,
+				BAB751C618B5FE7000EEE896 /* ExpiryTypeView.h */,
+				BAB751C718B5FE7000EEE896 /* ExpiryTypeView.m */,
+				BAB751C818B5FE7000EEE896 /* ProtectionView.h */,
+				BAB751C918B5FE7000EEE896 /* ProtectionView.m */,
+			);
+			path = AutoLayoutsExplored;
+			sourceTree = "<group>";
+		};
+		BAB7518618B5D79A00EEE896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAB7518718B5D79A00EEE896 /* AutoLayoutsExplored-Info.plist */,
+				BAB7518818B5D79A00EEE896 /* InfoPlist.strings */,
+				BAB7518B18B5D79A00EEE896 /* main.m */,
+				BAB7518D18B5D79A00EEE896 /* AutoLayoutsExplored-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAB7519E18B5D79A00EEE896 /* AutoLayoutsExploredTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAB751A418B5D79A00EEE896 /* AutoLayoutsExploredTests.m */,
+				BAB7519F18B5D79A00EEE896 /* Supporting Files */,
+			);
+			path = AutoLayoutsExploredTests;
+			sourceTree = "<group>";
+		};
+		BAB7519F18B5D79A00EEE896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAB751A018B5D79A00EEE896 /* AutoLayoutsExploredTests-Info.plist */,
+				BAB751A118B5D79A00EEE896 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAB7517B18B5D79A00EEE896 /* AutoLayoutsExplored */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB751A818B5D79A00EEE896 /* Build configuration list for PBXNativeTarget "AutoLayoutsExplored" */;
+			buildPhases = (
+				BAB7517818B5D79A00EEE896 /* Sources */,
+				BAB7517918B5D79A00EEE896 /* Frameworks */,
+				BAB7517A18B5D79A00EEE896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoLayoutsExplored;
+			productName = AutoLayoutsExplored;
+			productReference = BAB7517C18B5D79A00EEE896 /* AutoLayoutsExplored.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAB7519618B5D79A00EEE896 /* AutoLayoutsExploredTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB751AB18B5D79A00EEE896 /* Build configuration list for PBXNativeTarget "AutoLayoutsExploredTests" */;
+			buildPhases = (
+				BAB7519318B5D79A00EEE896 /* Sources */,
+				BAB7519418B5D79A00EEE896 /* Frameworks */,
+				BAB7519518B5D79A00EEE896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAB7519D18B5D79A00EEE896 /* PBXTargetDependency */,
+			);
+			name = AutoLayoutsExploredTests;
+			productName = AutoLayoutsExploredTests;
+			productReference = BAB7519718B5D79A00EEE896 /* AutoLayoutsExploredTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAB7517418B5D79A00EEE896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Sharma Elanthiraiyan";
+				TargetAttributes = {
+					BAB7519618B5D79A00EEE896 = {
+						TestTargetID = BAB7517B18B5D79A00EEE896;
+					};
+				};
+			};
+			buildConfigurationList = BAB7517718B5D79A00EEE896 /* Build configuration list for PBXProject "AutoLayoutsExplored" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BAB7517318B5D79A00EEE896;
+			productRefGroup = BAB7517D18B5D79A00EEE896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAB7517B18B5D79A00EEE896 /* AutoLayoutsExplored */,
+				BAB7519618B5D79A00EEE896 /* AutoLayoutsExploredTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAB7517A18B5D79A00EEE896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB7518A18B5D79A00EEE896 /* InfoPlist.strings in Resources */,
+				BAB7519218B5D79A00EEE896 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB7519518B5D79A00EEE896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB751A318B5D79A00EEE896 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAB7517818B5D79A00EEE896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB751BC18B5DBD100EEE896 /* BuySellView.m in Sources */,
+				BAB751CA18B5FE7000EEE896 /* ExpiryTypeView.m in Sources */,
+				BAB7519018B5D79A00EEE896 /* AppDelegate.m in Sources */,
+				BAB751B218B5D7B500EEE896 /* BaseViewController.m in Sources */,
+				BAB751B618B5D81D00EEE896 /* TradeView.m in Sources */,
+				BAB7518C18B5D79A00EEE896 /* main.m in Sources */,
+				BAB751BF18B5DC8D00EEE896 /* StopOrTrailingStopView.m in Sources */,
+				BAB751B318B5D7B500EEE896 /* BaseView.m in Sources */,
+				BAB751B918B5D85A00EEE896 /* TradeViewController.m in Sources */,
+				BAB751CB18B5FE7000EEE896 /* ProtectionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB7519318B5D79A00EEE896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB751A518B5D79A00EEE896 /* AutoLayoutsExploredTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAB7519D18B5D79A00EEE896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAB7517B18B5D79A00EEE896 /* AutoLayoutsExplored */;
+			targetProxy = BAB7519C18B5D79A00EEE896 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAB7518818B5D79A00EEE896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAB7518918B5D79A00EEE896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BAB751A118B5D79A00EEE896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAB751A218B5D79A00EEE896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAB751A618B5D79A00EEE896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BAB751A718B5D79A00EEE896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAB751A918B5D79A00EEE896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoLayoutsExplored/AutoLayoutsExplored-Prefix.pch";
+				INFOPLIST_FILE = "AutoLayoutsExplored/AutoLayoutsExplored-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BAB751AA18B5D79A00EEE896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoLayoutsExplored/AutoLayoutsExplored-Prefix.pch";
+				INFOPLIST_FILE = "AutoLayoutsExplored/AutoLayoutsExplored-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BAB751AC18B5D79A00EEE896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoLayoutsExplored.app/AutoLayoutsExplored";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoLayoutsExplored/AutoLayoutsExplored-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AutoLayoutsExploredTests/AutoLayoutsExploredTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BAB751AD18B5D79A00EEE896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoLayoutsExplored.app/AutoLayoutsExplored";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoLayoutsExplored/AutoLayoutsExplored-Prefix.pch";
+				INFOPLIST_FILE = "AutoLayoutsExploredTests/AutoLayoutsExploredTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAB7517718B5D79A00EEE896 /* Build configuration list for PBXProject "AutoLayoutsExplored" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB751A618B5D79A00EEE896 /* Debug */,
+				BAB751A718B5D79A00EEE896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB751A818B5D79A00EEE896 /* Build configuration list for PBXNativeTarget "AutoLayoutsExplored" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB751A918B5D79A00EEE896 /* Debug */,
+				BAB751AA18B5D79A00EEE896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAB751AB18B5D79A00EEE896 /* Build configuration list for PBXNativeTarget "AutoLayoutsExploredTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB751AC18B5D79A00EEE896 /* Debug */,
+				BAB751AD18B5D79A00EEE896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAB7517418B5D79A00EEE896 /* Project object */;
+}
