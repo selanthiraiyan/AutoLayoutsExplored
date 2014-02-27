@@ -15,6 +15,7 @@
 @property (strong) UILabel *label2;
 @property (strong) UILabel *label3;
 
+
 @property (strong) NSMutableArray *constraints;
 
 @end
@@ -33,6 +34,7 @@
         self.button.backgroundColor = [UIColor redColor];
         self.button.translatesAutoresizingMaskIntoConstraints = NO;
         [self.button addTarget:self action:@selector(adjustViews) forControlEvents:UIControlEventTouchUpInside];
+        [self.button setTitle:@"Click me" forState:UIControlStateNormal];
         [self addSubview:self.button];
         
         self.label1 = [[UILabel alloc]init];
@@ -75,7 +77,6 @@
     if ([self.subviews  containsObject:self.label3]) {
         
         views = NSDictionaryOfVariableBindings(button, label1, label2, label3);
-
         
         [self.constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"[label3(==button)]" options:0 metrics:0 views:views]];
         [self.constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[button(30)]-[label1(==button)]-[label2(==button)]-[label3(==button)]-|" options:NSLayoutFormatAlignAllCenterX metrics:0 views:views]];
