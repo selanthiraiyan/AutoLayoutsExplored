@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TradeViewController.h"
-
+#import "iPadViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -18,7 +18,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    TradeViewController *vc = [[TradeViewController alloc]init];
+    iPadViewController *vc = [[iPadViewController alloc]init];
     self.window.rootViewController = vc;
     
     return YES;

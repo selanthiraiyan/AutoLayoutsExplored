@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA54AEA318FBDA8B0069DDC6 /* iPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEA218FBDA8B0069DDC6 /* iPadViewController.m */; };
+		BA54AEA618FBDAB20069DDC6 /* iPadBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEA518FBDAB20069DDC6 /* iPadBaseView.m */; };
+		BA54AEA918FBDAC30069DDC6 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEA818FBDAC30069DDC6 /* HomeView.m */; };
+		BA54AEAE18FBDC020069DDC6 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEAD18FBDC020069DDC6 /* HeaderView.m */; };
 		BAB7518018B5D79A00EEE896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7517F18B5D79A00EEE896 /* Foundation.framework */; };
 		BAB7518218B5D79A00EEE896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7518118B5D79A00EEE896 /* CoreGraphics.framework */; };
 		BAB7518418B5D79A00EEE896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7518318B5D79A00EEE896 /* UIKit.framework */; };
@@ -41,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA54AEA118FBDA8B0069DDC6 /* iPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadViewController.h; sourceTree = "<group>"; };
+		BA54AEA218FBDA8B0069DDC6 /* iPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadViewController.m; sourceTree = "<group>"; };
+		BA54AEA418FBDAB20069DDC6 /* iPadBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadBaseView.h; sourceTree = "<group>"; };
+		BA54AEA518FBDAB20069DDC6 /* iPadBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadBaseView.m; sourceTree = "<group>"; };
+		BA54AEA718FBDAC30069DDC6 /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		BA54AEA818FBDAC30069DDC6 /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		BA54AEAC18FBDC020069DDC6 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		BA54AEAD18FBDC020069DDC6 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		BAB7517C18B5D79A00EEE896 /* AutoLayoutsExplored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutsExplored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB7517F18B5D79A00EEE896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BAB7518118B5D79A00EEE896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +112,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA54AEAA18FBDB4A0069DDC6 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				BAB751B418B5D81D00EEE896 /* TradeView.h */,
+				BAB751B518B5D81D00EEE896 /* TradeView.m */,
+				BAB751B718B5D85A00EEE896 /* TradeViewController.h */,
+				BAB751B818B5D85A00EEE896 /* TradeViewController.m */,
+				BAB751BA18B5DBD100EEE896 /* BuySellView.h */,
+				BAB751BB18B5DBD100EEE896 /* BuySellView.m */,
+				BAB751BD18B5DC8D00EEE896 /* StopOrTrailingStopView.h */,
+				BAB751BE18B5DC8D00EEE896 /* StopOrTrailingStopView.m */,
+				BAB751C618B5FE7000EEE896 /* ExpiryTypeView.h */,
+				BAB751C718B5FE7000EEE896 /* ExpiryTypeView.m */,
+				BAB751C818B5FE7000EEE896 /* ProtectionView.h */,
+				BAB751C918B5FE7000EEE896 /* ProtectionView.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		BA54AEAB18FBDB4F0069DDC6 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				BA54AEA118FBDA8B0069DDC6 /* iPadViewController.h */,
+				BA54AEA218FBDA8B0069DDC6 /* iPadViewController.m */,
+				BA54AEA418FBDAB20069DDC6 /* iPadBaseView.h */,
+				BA54AEA518FBDAB20069DDC6 /* iPadBaseView.m */,
+				BA54AEA718FBDAC30069DDC6 /* HomeView.h */,
+				BA54AEA818FBDAC30069DDC6 /* HomeView.m */,
+				BA54AEAC18FBDC020069DDC6 /* HeaderView.h */,
+				BA54AEAD18FBDC020069DDC6 /* HeaderView.m */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		BAB7517318B5D79A00EEE896 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +180,8 @@
 		BAB7518518B5D79A00EEE896 /* AutoLayoutsExplored */ = {
 			isa = PBXGroup;
 			children = (
+				BA54AEAB18FBDB4F0069DDC6 /* iPad */,
+				BA54AEAA18FBDB4A0069DDC6 /* iPhone */,
 				BAB751AE18B5D7B500EEE896 /* BaseViewController.h */,
 				BAB751AF18B5D7B500EEE896 /* BaseViewController.m */,
 				BAB751B018B5D7B500EEE896 /* BaseView.h */,
@@ -142,18 +190,6 @@
 				BAB7518F18B5D79A00EEE896 /* AppDelegate.m */,
 				BAB7519118B5D79A00EEE896 /* Images.xcassets */,
 				BAB7518618B5D79A00EEE896 /* Supporting Files */,
-				BAB751B418B5D81D00EEE896 /* TradeView.h */,
-				BAB751B518B5D81D00EEE896 /* TradeView.m */,
-				BAB751B718B5D85A00EEE896 /* TradeViewController.h */,
-				BAB751B818B5D85A00EEE896 /* TradeViewController.m */,
-				BAB751BA18B5DBD100EEE896 /* BuySellView.h */,
-				BAB751BB18B5DBD100EEE896 /* BuySellView.m */,
-				BAB751BD18B5DC8D00EEE896 /* StopOrTrailingStopView.h */,
-				BAB751BE18B5DC8D00EEE896 /* StopOrTrailingStopView.m */,
-				BAB751C618B5FE7000EEE896 /* ExpiryTypeView.h */,
-				BAB751C718B5FE7000EEE896 /* ExpiryTypeView.m */,
-				BAB751C818B5FE7000EEE896 /* ProtectionView.h */,
-				BAB751C918B5FE7000EEE896 /* ProtectionView.m */,
 			);
 			path = AutoLayoutsExplored;
 			sourceTree = "<group>";
@@ -234,6 +270,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Sharma Elanthiraiyan";
 				TargetAttributes = {
+					BAB7517B18B5D79A00EEE896 = {
+						DevelopmentTeam = 5CNN55283J;
+					};
 					BAB7519618B5D79A00EEE896 = {
 						TestTargetID = BAB7517B18B5D79A00EEE896;
 					};
@@ -285,12 +324,16 @@
 			files = (
 				BAB751BC18B5DBD100EEE896 /* BuySellView.m in Sources */,
 				BAB751CA18B5FE7000EEE896 /* ExpiryTypeView.m in Sources */,
+				BA54AEA318FBDA8B0069DDC6 /* iPadViewController.m in Sources */,
 				BAB7519018B5D79A00EEE896 /* AppDelegate.m in Sources */,
 				BAB751B218B5D7B500EEE896 /* BaseViewController.m in Sources */,
 				BAB751B618B5D81D00EEE896 /* TradeView.m in Sources */,
 				BAB7518C18B5D79A00EEE896 /* main.m in Sources */,
+				BA54AEAE18FBDC020069DDC6 /* HeaderView.m in Sources */,
+				BA54AEA918FBDAC30069DDC6 /* HomeView.m in Sources */,
 				BAB751BF18B5DC8D00EEE896 /* StopOrTrailingStopView.m in Sources */,
 				BAB751B318B5D7B500EEE896 /* BaseView.m in Sources */,
+				BA54AEA618FBDAB20069DDC6 /* iPadBaseView.m in Sources */,
 				BAB751B918B5D85A00EEE896 /* TradeViewController.m in Sources */,
 				BAB751CB18B5FE7000EEE896 /* ProtectionView.m in Sources */,
 			);
@@ -411,10 +454,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayoutsExplored/AutoLayoutsExplored-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayoutsExplored/AutoLayoutsExplored-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Sharma/Sharma/development/libs/baseui/Release_universal/Release-universal",
+					"/Users/Sharma/Sharma/development/libs/utils/Release_universal/Release-universal",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,10 +481,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayoutsExplored/AutoLayoutsExplored-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayoutsExplored/AutoLayoutsExplored-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Sharma/Sharma/development/libs/baseui/Release_universal/Release-universal",
+					"/Users/Sharma/Sharma/development/libs/utils/Release_universal/Release-universal",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -493,6 +564,7 @@
 				BAB751AA18B5D79A00EEE896 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAB751AB18B5D79A00EEE896 /* Build configuration list for PBXNativeTarget "AutoLayoutsExploredTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +573,7 @@
 				BAB751AD18B5D79A00EEE896 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
