@@ -1,5 +1,5 @@
 //
-//  iPadBaseView.h
+//  ChartsView.h
 //  AutoLayoutsExplored
 //
 //  Created by Sharma Elanthiraiyan on 14/04/14.
@@ -7,11 +7,7 @@
 //
 
 #import "BaseView.h"
-#import "HeaderView.h"
 
-@interface iPadBaseView : BaseView
-
-@property (strong) HeaderView *headerView;
-@property (strong) UIView *contentView;
+@interface ChartsView : BaseView
 
 @end

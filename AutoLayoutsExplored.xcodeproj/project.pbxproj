@@ -11,6 +11,9 @@
 		BA54AEA618FBDAB20069DDC6 /* iPadBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEA518FBDAB20069DDC6 /* iPadBaseView.m */; };
 		BA54AEA918FBDAC30069DDC6 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEA818FBDAC30069DDC6 /* HomeView.m */; };
 		BA54AEAE18FBDC020069DDC6 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEAD18FBDC020069DDC6 /* HeaderView.m */; };
+		BA54AEB118FBDFCB0069DDC6 /* RatesView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEB018FBDFCB0069DDC6 /* RatesView.m */; };
+		BA54AEB418FBDFD80069DDC6 /* ChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEB318FBDFD80069DDC6 /* ChartsView.m */; };
+		BA54AEB718FBDFE50069DDC6 /* PositionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54AEB618FBDFE50069DDC6 /* PositionsView.m */; };
 		BAB7518018B5D79A00EEE896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7517F18B5D79A00EEE896 /* Foundation.framework */; };
 		BAB7518218B5D79A00EEE896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7518118B5D79A00EEE896 /* CoreGraphics.framework */; };
 		BAB7518418B5D79A00EEE896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB7518318B5D79A00EEE896 /* UIKit.framework */; };
@@ -53,6 +56,12 @@
 		BA54AEA818FBDAC30069DDC6 /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		BA54AEAC18FBDC020069DDC6 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		BA54AEAD18FBDC020069DDC6 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		BA54AEAF18FBDFCB0069DDC6 /* RatesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatesView.h; sourceTree = "<group>"; };
+		BA54AEB018FBDFCB0069DDC6 /* RatesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatesView.m; sourceTree = "<group>"; };
+		BA54AEB218FBDFD80069DDC6 /* ChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsView.h; sourceTree = "<group>"; };
+		BA54AEB318FBDFD80069DDC6 /* ChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsView.m; sourceTree = "<group>"; };
+		BA54AEB518FBDFE50069DDC6 /* PositionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionsView.h; sourceTree = "<group>"; };
+		BA54AEB618FBDFE50069DDC6 /* PositionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionsView.m; sourceTree = "<group>"; };
 		BAB7517C18B5D79A00EEE896 /* AutoLayoutsExplored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutsExplored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB7517F18B5D79A00EEE896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BAB7518118B5D79A00EEE896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,6 +151,12 @@
 				BA54AEA818FBDAC30069DDC6 /* HomeView.m */,
 				BA54AEAC18FBDC020069DDC6 /* HeaderView.h */,
 				BA54AEAD18FBDC020069DDC6 /* HeaderView.m */,
+				BA54AEAF18FBDFCB0069DDC6 /* RatesView.h */,
+				BA54AEB018FBDFCB0069DDC6 /* RatesView.m */,
+				BA54AEB218FBDFD80069DDC6 /* ChartsView.h */,
+				BA54AEB318FBDFD80069DDC6 /* ChartsView.m */,
+				BA54AEB518FBDFE50069DDC6 /* PositionsView.h */,
+				BA54AEB618FBDFE50069DDC6 /* PositionsView.m */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -323,18 +338,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAB751BC18B5DBD100EEE896 /* BuySellView.m in Sources */,
+				BA54AEB718FBDFE50069DDC6 /* PositionsView.m in Sources */,
 				BAB751CA18B5FE7000EEE896 /* ExpiryTypeView.m in Sources */,
 				BA54AEA318FBDA8B0069DDC6 /* iPadViewController.m in Sources */,
 				BAB7519018B5D79A00EEE896 /* AppDelegate.m in Sources */,
 				BAB751B218B5D7B500EEE896 /* BaseViewController.m in Sources */,
 				BAB751B618B5D81D00EEE896 /* TradeView.m in Sources */,
 				BAB7518C18B5D79A00EEE896 /* main.m in Sources */,
+				BA54AEB418FBDFD80069DDC6 /* ChartsView.m in Sources */,
 				BA54AEAE18FBDC020069DDC6 /* HeaderView.m in Sources */,
 				BA54AEA918FBDAC30069DDC6 /* HomeView.m in Sources */,
 				BAB751BF18B5DC8D00EEE896 /* StopOrTrailingStopView.m in Sources */,
 				BAB751B318B5D7B500EEE896 /* BaseView.m in Sources */,
 				BA54AEA618FBDAB20069DDC6 /* iPadBaseView.m in Sources */,
 				BAB751B918B5D85A00EEE896 /* TradeViewController.m in Sources */,
+				BA54AEB118FBDFCB0069DDC6 /* RatesView.m in Sources */,
 				BAB751CB18B5FE7000EEE896 /* ProtectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

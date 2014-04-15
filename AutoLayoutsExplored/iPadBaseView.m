@@ -7,12 +7,10 @@
 //
 
 #import "iPadBaseView.h"
-#import "HeaderView.h"
 
 @interface iPadBaseView ()
 
-@property (strong) HeaderView *headerView;
-@property (strong) UIView *contentView;
+
 
 @end
 
@@ -23,7 +21,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
         self.headerView = [[HeaderView alloc]init];
         self.headerView.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:self.headerView];
@@ -32,11 +29,12 @@
         self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:self.contentView];
         
+
         NSDictionary *views = NSDictionaryOfVariableBindings(headerView, contentView);
         
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[headerView]|" options:0 metrics:0 views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"[contentView(==headerView)]" options:0 metrics:0 views:views]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[headerView(==60)]-[contentView]|" options:0 metrics:0 views:views]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[contentView]|" options:0 metrics:0 views:views]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[headerView(==60)][contentView]|" options:0 metrics:0 views:views]];
 
     }
     return self;

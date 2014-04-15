@@ -33,6 +33,9 @@
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[homeView]|" options:0 metrics:0 views:views]];
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[homeView]|" options:0 metrics:0 views:views]];
 
+        [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(deviceDidRotateSelector:) name: UIDeviceOrientationDidChangeNotification object: nil];
+        
+
     }
     return self;
 }
@@ -47,6 +50,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)deviceDidRotateSelector:(NSNotification*) notification {
+    [self.homeView setNeedsUpdateConstraints];
 }
 
 /*
