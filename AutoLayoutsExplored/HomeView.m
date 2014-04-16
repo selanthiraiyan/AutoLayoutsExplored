@@ -17,7 +17,8 @@
 @property (strong) ChartsView *chartsView;
 @property (strong) PositionsView *positionsView;
 
-@property (strong) NSMutableArray *localConstraints;
+@property (strong) NSMutableArray *constraintsPortriat;
+@property (strong) NSMutableArray *constraintsLanscape;
 
 @end
 
@@ -39,7 +40,6 @@
         self.positionsView.translatesAutoresizingMaskIntoConstraints = NO;
         [self.contentView addSubview:self.positionsView];
         
-        self.localConstraints = [NSMutableArray array];
         
         
     }
@@ -49,60 +49,54 @@
 - (void)setNeedsUpdateConstraints
 {
 
-    [super setNeedsUpdateConstraints];
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     
-
     NSMutableDictionary *views = [NSMutableDictionary dictionaryWithDictionary: NSDictionaryOfVariableBindings(ratesView, chartsView, positionsView)];
 
-    [views setObject:self.contentView forKey:@"contentView"];
-    
-    [self removeConstraints:self.localConstraints];
+    if (self.constraintsLanscape == nil) {
+        self.constraintsLanscape = [NSMutableArray array];
 
-    [self.localConstraints removeAllObjects];
+        [self.constraintsLanscape addObject:[NSLayoutConstraint constraintWithItem:self.ratesView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.3 constant:0]];
+        [self.constraintsLanscape addObject:[NSLayoutConstraint constraintWithItem:self.ratesView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeHeight multiplier:0.6 constant:0]];
+        [self.constraintsLanscape addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[ratesView]" options:0 metrics:0 views:views]];
+        [self.constraintsLanscape addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[chartsView]" options:0 metrics:0 views:views]];
+        [self.constraintsLanscape addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[ratesView]-[chartsView]|" options:0 metrics:0 views:views]];
+        [self.constraintsLanscape addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[positionsView]|" options:0 metrics:0 views:views]];
+        [self.constraintsLanscape addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[ratesView][positionsView]|" options:0 metrics:0 views:views]];
+        [self.constraintsLanscape addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[chartsView][positionsView]|" options:0 metrics:0 views:views]];
+        [self.constraintsLanscape addObject:[NSLayoutConstraint constraintWithItem:self.chartsView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.ratesView attribute:NSLayoutAttributeHeight multiplier:1 constant:0]];
+    }
+
+    if (self.constraintsPortriat == nil) {
+        
+        self.constraintsPortriat = [NSMutableArray array];
+
+        [self.constraintsPortriat addObject:[NSLayoutConstraint constraintWithItem:self.ratesView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.4 constant:0]];
+        [self.constraintsPortriat addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[ratesView]|" options:0 metrics:0 views:views]];
+        [self.constraintsPortriat addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[ratesView]-[chartsView]|" options:0 metrics:0 views:views]];
+        [self.constraintsPortriat addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[ratesView]-[positionsView]|" options:0 metrics:0 views:views]];
+        [self.constraintsPortriat addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[chartsView]-[positionsView]|" options:0 metrics:0 views:views]];
+        [self.constraintsPortriat addObject:[NSLayoutConstraint constraintWithItem:self.chartsView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.contentView attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
+        [self.constraintsPortriat addObject:[NSLayoutConstraint constraintWithItem:self.positionsView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.contentView attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
+
+    }
+    
+    
+    [self removeConstraints:self.constraintsPortriat];
+    [self removeConstraints:self.constraintsLanscape];
+
     
     if (UIInterfaceOrientationIsPortrait(orientation))
     {
-        [self.localConstraints addObject:[NSLayoutConstraint constraintWithItem:self.ratesView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.4 constant:0]];
-
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[ratesView]|" options:0 metrics:0 views:views]];
-
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[ratesView]-[chartsView]|" options:0 metrics:0 views:views]];
-        
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[ratesView]-[positionsView]|" options:0 metrics:0 views:views]];
-        
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[chartsView]-[positionsView]|" options:0 metrics:0 views:views]];
-        
-        [self.localConstraints addObject:[NSLayoutConstraint constraintWithItem:self.chartsView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.contentView attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
-        
-        [self.localConstraints addObject:[NSLayoutConstraint constraintWithItem:self.positionsView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.contentView attribute:NSLayoutAttributeHeight multiplier:0.5 constant:0]];
-        
+        [self addConstraints:self.constraintsPortriat];
     }
     else
     {
-        [self.localConstraints addObject:[NSLayoutConstraint constraintWithItem:self.ratesView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.3 constant:0]];
-        
-        [self.localConstraints addObject:[NSLayoutConstraint constraintWithItem:self.ratesView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeHeight multiplier:0.6 constant:0]];
-
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[ratesView]" options:0 metrics:0 views:views]];
-
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[chartsView]" options:0 metrics:0 views:views]];
-
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[ratesView]-[chartsView]|" options:0 metrics:0 views:views]];
-        
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[positionsView]|" options:0 metrics:0 views:views]];
-        
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[ratesView][positionsView]|" options:0 metrics:0 views:views]];
-
-        [self.localConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[chartsView][positionsView]|" options:0 metrics:0 views:views]];
-
-        [self.localConstraints addObject:[NSLayoutConstraint constraintWithItem:self.chartsView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.ratesView attribute:NSLayoutAttributeHeight multiplier:1 constant:0]];
-        
+        [self addConstraints:self.constraintsLanscape];
     }
 
     
-    [self addConstraints:self.localConstraints];
-    [self updateConstraints];
+    [super setNeedsUpdateConstraints];
 }
 
 /*

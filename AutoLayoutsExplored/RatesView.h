@@ -10,4 +10,6 @@
 
 @interface RatesView : BaseView
 
+- (void)printFrame;
+
 @end
